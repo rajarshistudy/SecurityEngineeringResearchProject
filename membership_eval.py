@@ -27,9 +27,8 @@ def main():
     in_dl  = DataLoader(Subset(train_ds, in_idx), batch_size=64, shuffle=False)
     out_dl = DataLoader(Subset(test_ds, out_idx), batch_size=64, shuffle=False)
 
-    # load one of your saved models here – you may need to add saving in train_*.py
     model = MNIST_CNN().to(device)
-    model.load_state_dict(torch.load("fedavg_final.pt"))  # or cronus_final.pt
+    model.load_state_dict(torch.load("fedavg_final.pt")) 
 
     in_losses  = per_sample_loss(model, in_dl, device)
     out_losses = per_sample_loss(model, out_dl, device)
