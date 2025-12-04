@@ -56,7 +56,7 @@ def split_clients(dataset, n_clients=8, noniid=True):
         np.random.shuffle(idx)
         splits = np.array_split(idx, n_clients)
 
-    # --- Build actual Subsets mapped to REAL MNIST indices ---
+    # --- Build actual Subsets mapped to MNIST indices ---
     clients = []
     for s in splits:
         if isinstance(dataset, Subset):
