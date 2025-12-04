@@ -64,7 +64,7 @@ def distill_and_finetune(global_model, client_dataset, Xp, Ybar, device,
             if malicious:
                 y_u = (y_u + 1) % 10
 
-            # KD on PUBLIC pool (CORRECT)
+            # KD on PUBLIC pool
             loss_kd = kd_loss(mdl(x_p), y_p, T=T)
 
             # supervised on client PRIVATE data
