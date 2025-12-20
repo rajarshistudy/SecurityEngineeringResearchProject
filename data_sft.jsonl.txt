@@ -1,4 +1,0 @@
-{"instruction":"Explain federated learning in one paragraph for undergrads.","response":"Federated learning is a training setup where ..."}
-{"instruction":"List three ways to reduce privacy leakage when training LLMs.","response":"1) Differential privacy with per-example clipping and noise...\n2) Secure aggregation of client updates...\n3) Minimizing rounds and sensitive memorization via data filtering..."}
-{"instruction":"Summarize: 'Crescendo jailbreak attacks'.","response":"Crescendo jailbreaks escalate prompts over multiple turns to bypass safety policies by building rapport and normalizing boundary pushes."}
-{"instruction":"Rewrite politely: 'Your request is unsafe'.","response":"I can’t help with that, but I can share safer, high-level information or alternatives if you’d like."}
